@@ -1,0 +1,31 @@
+.Search-form {
+    margin: 2.5em 10em 0em;
+}
+
+#default-search {
+  box-shadow: 1px 0px 50px #130f40;
+  outline: none;
+}
+
+#submit-search {
+  border-radius: 10%;
+  width: 75px;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-items: center;
+  box-shadow: 10px 20px 70px #0c0931;
+  justify-content: center;
+  background: #130f40;
+}
+
+.search-hand {
+  width: 30px;
+  height: 5px;
+  background: #130f40;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 96%;
+  transform: rotate(172deg);
+}

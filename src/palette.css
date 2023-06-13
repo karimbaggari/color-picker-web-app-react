@@ -1,0 +1,10 @@
+.Palette {
+  position: relative;
+  height: 60em;
+  padding: 1em;
+  left: 5em;
+}
+.Palette-colors {
+  padding: 1em;
+  height: 90%;
+}
