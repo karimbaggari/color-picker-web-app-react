@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 import ColorBox from "./ColorBox";
-import { generatePalette } from "./colorHelpers";
 import "./palette.css";
 import "rc-slider/assets/index.css";
-import Slider from "rc-slider";
 export class Palette extends Component {
   constructor(props) {
     super(props);
