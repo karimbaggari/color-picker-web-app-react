@@ -3,7 +3,6 @@ import Palette from "./Palette";
 import seedPalettes from "./seedColors";
 import PalleteList from "./PalleteList";
 import { Route, Switch } from "react-router-dom";
-import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { Component } from "react";
 import seedColors from "./seedColors";
@@ -17,13 +16,16 @@ class App extends Component {
   render() {
     return (
       <Switch>
-        <Route exact path="/" render={() => <PalleteList palettes={seedColors} />} />
+        <Route
+          exact
+          path="/"
+          render={() => <PalleteList palettes={seedColors} />}
+        />
         <Route
           exact
           path="/palette/:id"
           render={(routeProps) => (
             <>
-              <Navbar />
               <Palette palette={this.findPalette(routeProps.match.params.id)} />
               <Footer />
             </>
@@ -31,9 +33,6 @@ class App extends Component {
         />
         <Route exact render={() => <h1>ERROR 404</h1>} />
       </Switch>
-      // <div className="App">
-
-      // </div>
     );
   }
 }
